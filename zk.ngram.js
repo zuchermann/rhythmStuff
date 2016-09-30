@@ -43,7 +43,7 @@ function getTransitions(weights){
 function prob(num, pattern) {
 	var ngram = ngrams[num];
 	var predict = ngram[pattern.toString()];
-	var choice = -1;
+	var choice = false;
 	if (predict){
 		var keys = Object.keys(predict);
 		var sum = 0;
@@ -79,7 +79,7 @@ function list() {
 	for (i = 1; i < a.length; i++){
 		insert(a.slice(0, (i + 1)));
 		var guess = prob((i + 1), a.slice((a.length - i), a.length));
-		if(guess > 0) {
+		if(guess) {
 			probs.push(guess);
 		}
 	}
