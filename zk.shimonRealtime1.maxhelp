@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 125.0, 640.0, 480.0 ],
+		"rect" : [ 844.0, 114.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -109,7 +109,7 @@
 					"bgcolor" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"bgcolor2" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0,
+					"bgfillcolor_autogradient" : 0.0,
 					"bgfillcolor_color" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"bgfillcolor_color1" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -123,7 +123,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 106.0, 238.0, 56.0, 35.0 ],
-					"presentation_rect" : [ 106.0, 57.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "stop"
 				}
@@ -134,7 +133,7 @@
 					"bgcolor" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"bgcolor2" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0,
+					"bgfillcolor_autogradient" : 0.0,
 					"bgfillcolor_color" : [ 0.0, 0.533333, 0.168627, 1.0 ],
 					"bgfillcolor_color1" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -197,7 +196,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
-					"items" : [ "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "to Max 1", ",", "to Max 2", ",", "CASIO USB-MIDI" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -244,7 +243,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
+					"source" : [ "obj-1", 1 ]
 				}
 
 			}
@@ -359,6 +358,12 @@
 			}
 , 			{
 				"name" : "zk.pospass.maxpat",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.filterChords.maxpat",
 				"bootpath" : "~/Documents/Max 7/zach/rhythm",
 				"type" : "JSON",
 				"implicit" : 1
