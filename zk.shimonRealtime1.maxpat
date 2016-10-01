@@ -38,6 +38,32 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 328.5, 249.0, 53.0, 22.0 ],
+					"style" : "",
+					"text" : "zk.route"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 383.5, 214.0, 81.0, 22.0 ],
+					"style" : "",
+					"text" : "r zk.activated"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-76",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -81,7 +107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 461.0, 375.0, 43.0, 22.0 ],
+					"patching_rect" : [ 461.0, 412.0, 43.0, 22.0 ],
 					"style" : "",
 					"text" : "sel 10"
 				}
@@ -94,7 +120,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 461.0, 343.0, 61.0, 22.0 ],
+					"patching_rect" : [ 461.0, 380.0, 61.0, 22.0 ],
 					"style" : "",
 					"text" : "unpack i i"
 				}
@@ -107,7 +133,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 461.0, 311.0, 69.0, 22.0 ],
+					"patching_rect" : [ 461.0, 348.0, 69.0, 22.0 ],
 					"style" : "",
 					"text" : "zk.noteons"
 				}
@@ -196,7 +222,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 117.102036, 521.5, 53.0, 22.0 ],
+					"patching_rect" : [ 117.102036, 558.5, 53.0, 22.0 ],
 					"style" : "",
 					"text" : "zk.route"
 				}
@@ -209,7 +235,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 328.5, 521.5, 53.0, 22.0 ],
+					"patching_rect" : [ 328.5, 558.5, 53.0, 22.0 ],
 					"style" : "",
 					"text" : "zk.route"
 				}
@@ -222,7 +248,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 227.5, 521.5, 53.0, 22.0 ],
+					"patching_rect" : [ 227.5, 558.5, 53.0, 22.0 ],
 					"style" : "",
 					"text" : "zk.route"
 				}
@@ -235,7 +261,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.102036, 487.0, 81.0, 22.0 ],
+					"patching_rect" : [ 151.102036, 524.0, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "r zk.activated"
 				}
@@ -273,7 +299,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 328.5, 457.5, 53.0, 22.0 ],
+					"patching_rect" : [ 328.5, 494.5, 53.0, 22.0 ],
 					"style" : "",
 					"text" : "zk.route"
 				}
@@ -286,7 +312,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 227.5, 457.5, 53.0, 22.0 ],
+					"patching_rect" : [ 227.5, 494.5, 53.0, 22.0 ],
 					"style" : "",
 					"text" : "zk.route"
 				}
@@ -299,7 +325,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 151.102036, 419.5, 35.0, 22.0 ],
+					"patching_rect" : [ 151.102036, 451.5, 35.0, 22.0 ],
 					"style" : "",
 					"text" : "== 0"
 				}
@@ -312,7 +338,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.102036, 363.0, 83.0, 22.0 ],
+					"patching_rect" : [ 151.102036, 400.0, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "r zk.testMode"
 				}
@@ -325,7 +351,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 117.102036, 457.5, 53.0, 22.0 ],
+					"patching_rect" : [ 117.102036, 494.5, 53.0, 22.0 ],
 					"style" : "",
 					"text" : "zk.route"
 				}
@@ -427,7 +453,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 117.102036, 689.0, 187.0, 22.0 ],
+					"patching_rect" : [ 117.102036, 726.0, 187.0, 22.0 ],
 					"style" : "",
 					"text" : "udpsend 169.254.251.148 51973"
 				}
@@ -442,7 +468,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 117.102036, 622.5, 93.0, 22.0 ],
+					"patching_rect" : [ 117.102036, 659.5, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "/mididata $1 $2"
 				}
@@ -454,7 +480,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 227.5, 622.5, 61.0, 22.0 ],
+					"patching_rect" : [ 227.5, 659.5, 61.0, 22.0 ],
 					"style" : "",
 					"text" : "noteout 2"
 				}
@@ -467,7 +493,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 227.5, 311.0, 83.0, 22.0 ],
+					"patching_rect" : [ 227.5, 348.0, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "zk.midiToMidi"
 				}
@@ -480,7 +506,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 328.5, 311.0, 83.0, 22.0 ],
+					"patching_rect" : [ 328.5, 348.0, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "zk.midiToMidi"
 				}
@@ -507,7 +533,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 328.5, 622.5, 51.0, 22.0 ],
+					"patching_rect" : [ 328.5, 659.5, 51.0, 22.0 ],
 					"style" : "",
 					"text" : "noteout"
 				}
@@ -671,7 +697,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 328.5, 249.0, 42.0, 22.0 ],
+					"patching_rect" : [ 328.5, 214.0, 42.0, 22.0 ],
 					"style" : "",
 					"text" : "midiin"
 				}
@@ -835,6 +861,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -857,6 +892,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-20", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -946,7 +990,7 @@
 					"destination" : [ "obj-32", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 338.0, 351.0, 126.602036, 351.0 ],
+					"midpoints" : [ 338.0, 388.0, 126.602036, 388.0 ],
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -965,7 +1009,7 @@
 					"destination" : [ "obj-32", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 237.0, 342.0, 126.602036, 342.0 ],
+					"midpoints" : [ 237.0, 379.0, 126.602036, 379.0 ],
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -1182,7 +1226,7 @@
 					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 470.5, 411.0, 430.0, 411.0, 430.0, 194.0, 275.0, 194.0 ],
+					"midpoints" : [ 470.5, 457.0, 430.0, 457.0, 430.0, 194.0, 275.0, 194.0 ],
 					"source" : [ "obj-71", 0 ]
 				}
 
@@ -1198,7 +1242,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
@@ -1268,93 +1312,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "zk.midiToMidi.maxpat",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.predictMelody.maxpat",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.listaccum.js",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.ngram.js",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.diff.js",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.midiWrap.js",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.noteons.maxpat",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.predictRhythm.maxpat",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.rhythmList.js",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.doubler.js",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.divie.js",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.pospass.maxpat",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.filterChords.maxpat",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zk.route.maxpat",
-				"bootpath" : "~/Documents/Max 7/zach/rhythm",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
