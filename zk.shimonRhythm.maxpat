@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 163.0, 289.0, 72.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-11",
@@ -83,9 +96,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 131.0, 357.5, 61.0, 22.0 ],
+					"patching_rect" : [ 131.0, 343.5, 51.0, 22.0 ],
 					"style" : "",
-					"text" : "noteout 2"
+					"text" : "noteout"
 				}
 
 			}
@@ -96,7 +109,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 131.0, 213.0, 83.0, 22.0 ],
+					"patching_rect" : [ 131.0, 227.0, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "zk.midiToMidi"
 				}
@@ -109,7 +122,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 232.0, 213.0, 83.0, 22.0 ],
+					"patching_rect" : [ 232.0, 227.0, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "zk.midiToMidi"
 				}
@@ -136,7 +149,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 232.0, 357.5, 51.0, 22.0 ],
+					"patching_rect" : [ 232.0, 343.5, 51.0, 22.0 ],
 					"style" : "",
 					"text" : "noteout"
 				}
@@ -188,7 +201,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 341.0, 232.0, 72.0, 22.0 ],
+					"patching_rect" : [ 341.0, 199.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess 1"
 				}
@@ -200,7 +213,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 449.0, 312.5, 52.0, 20.0 ],
+					"patching_rect" : [ 449.0, 279.5, 52.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 237.5, 17.0, 52.0, 20.0 ],
 					"style" : "",
@@ -212,14 +225,14 @@
 				"box" : 				{
 					"fontsize" : 13.0,
 					"id" : "obj-96",
-					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "IMPACT LX61 Port 1", ",", "from Max 1", ",", "from Max 2", ",", "USB Keystation 61es" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "IAC Driver IAC Bus 3", ",", "IAC Driver IAC Bus 4", ",", "IAC Driver IAC Bus 5", ",", "IMPACT LX61 Port 1", ",", "from Max 1", ",", "from Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 341.0, 309.5, 100.0, 23.0 ],
+					"patching_rect" : [ 341.0, 276.5, 100.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 213.5, 41.0, 100.0, 23.0 ],
 					"style" : ""
@@ -235,7 +248,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 341.0, 270.0, 55.0, 23.0 ],
+					"patching_rect" : [ 341.0, 237.0, 55.0, 23.0 ],
 					"style" : "",
 					"text" : "midiinfo"
 				}
@@ -419,7 +432,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
-					"items" : [ "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "IMPACT LX61 Port 1", ",", "IMPACT LX61 Port 2", ",", "to Max 1", ",", "to Max 2", ",", "USB Keystation 61es" ],
+					"items" : [ "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "IAC Driver IAC Bus 3", ",", "IAC Driver IAC Bus 4", ",", "IAC Driver IAC Bus 5", ",", "IMPACT LX61 Port 1", ",", "IMPACT LX61 Port 2", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -463,6 +476,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-127", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -733,6 +764,12 @@
 			}
 , 			{
 				"name" : "zk.pospass.maxpat",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.filterChords.maxpat",
 				"bootpath" : "~/Documents/Max 7/zach/rhythm",
 				"type" : "JSON",
 				"implicit" : 1

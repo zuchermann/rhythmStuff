@@ -43,9 +43,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 420.0, 644.0, 50.0, 22.0 ],
+					"patching_rect" : [ 422.0, 601.0, 29.5, 22.0 ],
 					"style" : "",
-					"text" : "1"
+					"text" : "2"
 				}
 
 			}
@@ -493,9 +493,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 227.5, 659.5, 61.0, 22.0 ],
+					"patching_rect" : [ 227.5, 659.5, 51.0, 22.0 ],
 					"style" : "",
-					"text" : "noteout 2"
+					"text" : "noteout"
 				}
 
 			}
@@ -622,7 +622,7 @@
 				"box" : 				{
 					"fontsize" : 13.0,
 					"id" : "obj-96",
-					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "from Max 1", ",", "from Max 2", ",", "CASIO USB-MIDI" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "IAC Driver IAC Bus 3", ",", "IAC Driver IAC Bus 4", ",", "IAC Driver IAC Bus 5", ",", "from Max 1", ",", "from Max 2", ",", "IMPACT LX61 Port 1" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -860,6 +860,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-127", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -1325,7 +1343,93 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "zk.midiToMidi.maxpat",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.predictMelody.maxpat",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.listaccum.js",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.ngram.js",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.diff.js",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.midiWrap.js",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.noteons.maxpat",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.predictRhythm.maxpat",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.rhythmList.js",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.doubler.js",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.divie.js",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.pospass.maxpat",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.filterChords.maxpat",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zk.route.maxpat",
+				"bootpath" : "~/Documents/Max 7/zach/rhythm",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

@@ -3,12 +3,13 @@ var r = [];
 var mem = [];
 var MEM_LEN = 10;
 var diffs = [];
+var patternFile;
 
 outlets = 2;
 
 function bang() {
 	x = new Dict();
-	x.import_json("zk.rhythmicPatterns.json");
+	x.import_json(patternFile);
 	var xjson = JSON.parse(x.stringify());
 	r = xjson.rhythms
 	var i = 0;
@@ -85,4 +86,11 @@ function msg_float(val) {
 	}
 	match();
 	output();
+}
+
+function anything()
+{
+	var a = arrayfromargs(messagename, arguments);
+	patternFile = a;
+	post(a);
 }
